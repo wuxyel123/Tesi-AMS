@@ -1,0 +1,243 @@
+% !TEX encoding = UTF-8
+% !TEX TS-program = pdflatex
+% !TEX root = ../tesi.tex
+
+%**************************************************************
+\chapter{Introduzione}
+\label{cap:introduzione}
+%**************************************************************
+
+% Introduzione al contesto applicativo.\\
+
+% \noindent Esempio di utilizzo di un termine nel glossario \\
+% \gls{api}. \\
+
+% \noindent Esempio di citazione in linea \\
+% \cite{site:agile-manifesto}. \\
+
+% \noindent Esempio di citazione nel pie' di pagina \\
+%citazione\footcite{womak:lean-thinking} \\
+
+%**************************************************************
+\section{L'azienda}
+
+\href{https://scaiitec.it/}{SCAI ITEC\footcite{SCAI ITEC abbrev: ITEC} } è un'azienda italiana appartenente al \href{https://www.grupposcai.it/}{gruppo SCAI}. ITEC si occupa di consulenza, System Integration ed Application management in ambito ICT. L'azienda opera principalmente in settore bancario, assicurativo, industriale e di pubblica amministrazione e servizi. \\Gli elementi chiave del successo e della crescita di SCAI ITEC sono:
+\begin{itemize}
+    \item vasta e profonda conoscenza delle tecnologie;
+    \item grande attenzione per la soddisfazione del cliente;
+    \item molta esperienza, maturata nel corso del tempo.
+\end{itemize} 
+ITEC è oggi una delle maggiori realtà nel nord-est del paese in ambito ICT e si propone come partner per qualsiasi tipo di applicazione, progetto e servizio modellato sulle specifiche necessità del cliente. 
+\\Grazie alla consolidata esperienza nel ruolo di \gls{systemIntegratorg}\glsfirstoccur ed alle soluzioni leader di mercato proposte, ITEC è in grado di garantire ai propri clienti risposte rapide, concrete e qualificate in base alle specifiche esigenze di tipo gestionale e applicativo.
+\\Ultimo, ma non meno importante, dei motivi per cui l'azienda è all'avanguardia rispetto le nuove tecnologie è il grande investimento di ITEC in ricerca, sviluppo e formazione del personale.
+
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{logo-itec}
+    \caption{Logo SCAI ITEC}
+    \label{fig:figure1}
+    \end{center}
+\end{figure}
+
+
+%**************************************************************
+\section{Scopo dello stage}
+
+L'obiettivo principale dello stage è stato quello di inserire lo studente all'interno di una nuova progettualità, con un particolare focus sulle tematiche legate alle tecnologie multimediali e alla loro distribuzione. Lo studente, affiancato da un IT Architect, ha avuto la possibilità di partecipare al disegno, alla progettazione e realizzazione di una nuova progettualità. L'obbiettivo è stato apprendere le tecnologie e le best practice utilizzate in azienda nel ciclo di vita di un applicativo.
+La progettualità vista è volta a creare un software per la gestione di \gls{contenutog}\glsfirstoccur, per la loro creazione, modifica e distribuzione nei vari canali di vendita.
+Grazie a questa nuova applicazione si potrà:
+\begin{itemize}
+    \item creare, modificare eliminare e clonare dei contenuti informativi;
+    \item raggruppare i contenuti informativi su segmenti di mercato e distribuirli;
+    \item pianificare l’esecuzione e l’aggiornamento dei contenuti informativi sui vari canali di distribuzione;
+    \item seguire un processo di Authoring (paradigma Editore, Redattore, Supervisore) nella fase di creazione e distribuzione.
+\end{itemize} 
+In quanto l'intero progetto è di dimensione non indifferente l'obbiettivo dello stage è stato di sviluppare le funzionalità relative al ruolo di Editore, più nello specifico:
+\begin{itemize}
+    \item creazione di un contenuto;
+    \item modifica di un contenuto;
+    \item eliminazione di un contenuto;
+    \item preparazione di un contenuto per la distribuzione;
+    \item auditing delle azioni effettuate dagli utenti;
+    \item documentazione delle funzionalità implementate.
+\end{itemize}
+
+%**************************************************************
+\section{Tecnologie utilizzate}
+
+\subsection{JHipster}
+\href{https://www.jhipster.tech/}{JHipster} è una piattaforma di sviluppo, con uno stack tecnologico ben definito, utilizzata per generare, sviluppare e rilasciare, applicazioni e web services all'avanguardia. Supporta molteplici tecnologie per il frontend, tra le quali Angular, React e Vue. Fornisce inoltre supporto per le applicazioni per dispositivi mobili utilizzando Ionic e React Native. Per quanto riguarda il backend, JHipster supporta spring Boot (con l'ausilio di Java o Kotlin), Micronaut, Quarkus, NodeJS e .NET. Per il rilascio sono adottati i principi di \gls{cloudnativog}\glsfirstoccur. Il rilascio è inoltre supportato su AWS, Azure, Cloud Foundry, Google Cloud Platform, Heroku ed OpenShift.
+\\L'obbiettivo di JHipster è generare applicazioni web o microservizi all'avanguardia, unendo:
+\begin{itemize}
+    \item uno stack lato server robusto, ad alte prestazioni e coperto da test;
+    \item un interfaccia utente accattivante, moderna e mobile-first usando Angular, React o Vue e Bootstrap per il CSS;
+    \item un workflow ben definito per fare la build dell'applicazione con Maven o Gradle;
+    \item un architettura a microservizi resiliente,  utilizzando i principi di \gls{cloudnativog};
+    \item infrastruttura definita come codice, in modod da rendere la distribuzione su cloud veloce.
+\end{itemize}
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.2\textwidth]{logo-jhipster}
+    \caption{Logo JHipster}
+    \label{fig:figure2}
+    \end{center}
+\end{figure}
+
+\subsection{Java Enterprise}
+Java Enterprise, conosciuto anche come Java EE è un insieme di specifiche che mirano ad estendere Java 8, aggiungendo funzionalità enterprise come elaborazione distribuita e servizi web. Le applicazioni Java EE possono essere eseguite sia come \gls{microservizig}\glsfirstoccur che su \gls{appserverg}\glsfirstoccur. In entrambi i casi vengono gestite: transazionalità, scalabilità, sicurezza e concorrenza.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{logo-javaee}
+    \caption{Logo Java EE}
+    \label{fig:figure3}
+    \end{center}
+\end{figure}
+
+\subsection{Spring}
+Spring è un framework applicativo open source e un container per l'\gls{iocg}\glsfirstoccur utilizzato dalla piattaforma Java. Le funzionalità di base possono essere usate da una qualsiasi applicazione Java, mentre quelle più avanzate sono disponibili solamente per Java Enterprise.
+Il framework Spring ha a se associati vari moduli, nel corso del progetto sono stati utilizzati principalmente:
+\begin{itemize}
+    \item Spring Boot: utilizzato per creare applicazioni basate su spring eseguibili senza la necessità di configurare un web server;
+    \item Spring Data: il cui obbiettivo è di facilitare la gestione e l'interazione di applicazioni Java con un database.
+\end{itemize}
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.4\textwidth]{logo-spring}
+    \caption{Logo Spring}
+    \label{fig:figure4}
+    \end{center}
+\end{figure}
+
+\subsection{Hibernate}
+Hibernate è un framework per lo sviluppo di applicazioni in Java, utilizzato per gestire e mantenere su un database relazionale un insieme di oggetti Java.
+\\Le sue funzionalità principali sono:
+\begin{itemize}
+    \item mappare oggetti Java come tabelle su database;
+    \item convertire i campi dati Java a quelli del \gls{dbmsg}\glsfirstoccur utilizzato;
+    \item generare chiamate SQL e convertire la risposta ottenuta in un oggetto Java.
+\end{itemize}
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.5\textwidth]{logo-hibernate}
+    \caption{Logo Hibernate}
+    \label{fig:figure5}
+    \end{center}
+\end{figure}
+
+\subsection{REST\footcite{REST: acronimo di Representational State Transfer}}
+REST è un modello architetturale per i sistemi distribuiti. I sistemi rest si basano su HTTP e prevedono una struttura degli URL ben definita, che identifichi univocamente le risorse secondo la convenzione del modello stesso\footcite{Resource Naming: https://restfulapi.net/resource-naming/}. 
+In REST per il trasferimento di dati vengono utilizzati i metodi HTTP, più nello specifico:
+\begin{itemize}
+    \item GET: per il recupero di informazioni;
+    \item POST, PUT, PATCH: per l'inserimento di informazioni;
+    \item DELETE: per l'eliminazione di informazioni.
+\end{itemize}
+I principi guida di REST sono:
+\begin{itemize}
+    \item client-server: separazione dei problemi della UI da quelli di storage dei dati;
+    \item statelessness: ogni richiesta deve avere tutte le informazioni necessarie per il suo processamento;
+    \item cacheable: i client possono memorizzare in cache le risposte, queste devono essere definite esplicitamente o implicitamente cacheable, in modo da evitare il riutilizzo di dati errati;
+    \item uniform interface: utilizzo di un'interfaccia di comunicazione omogenea tra client e server in modo da disaccoppiare e semplificare l'architettura per poterla modificare a blocchi;
+    \item layered system:la struttura del sistema può essere composta da strati gerarchici. In questo caso ogni componente non può "vedere" oltre lo strato con cui sta interagendo;
+    \item code on demand(opzionale): il codice lato client può essere esteso scaricando ed eseguendo applet o script.
+\end{itemize}
+Nella definizione di API se queste rispettano tutti i vincoli imposti dall'architettura REST allora possono essere definite RESTful.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.25\textwidth]{logo-rest}
+    \caption{Logo REST}
+    \label{fig:figure6}
+    \end{center}
+\end{figure}
+
+\subsection{Oracle}
+Oracle database è un \gls{dbmsg} di tipo relazionale prodotto da \href{https://www.oracle.com/}{Oracle corporation}. I database oracle sono noti per offrire performance, scalabilità, affidabilità e sicurezza oltre a poter essere utilizzati sia on premise che nel cloud.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.29\textwidth]{logo-oracle}
+    \caption{Logo Oracle}
+    \label{fig:figure7}
+    \end{center}
+\end{figure}
+
+\subsection{Liquibase}
+Liquibase è una libreria open source indipendente dal \gls{dbmsg} utilizzato. Viene utilizzato per tracciare, gestire e applicare le modifiche allo schema del database.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{logo-liquibase}
+    \caption{Logo Liquibase}
+    \label{fig:figure8}
+    \end{center}
+\end{figure}
+
+\subsection{Angular}
+Angular è un framework open source per la progettazione e lo sviluppo di applicazioni web.
+Le applicazioni angular vengono eseguite interamente a lato client ma grazie alla moltitudine di moduli presenti è possibile integrare un sistema di backend più complesso eseguito lato server.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.3\textwidth]{logo-angular}
+    \caption{Logo Angular}
+    \label{fig:figure9}
+    \end{center}
+\end{figure}
+
+%**************************************************************
+\newpage
+\section{Strumenti di sviluppo}
+
+\subsection{Eclipse}
+L'IDE utilizzato per lo sviluppo, previo consiglio del tutor aziendale, è stato Eclipse.
+Eclipse è un ambiente di sviluppo integrato multipiattaforma e rientra nella categoria di software libero, distribuito secondo i termini della \href{https://www.eclipse.org/legal/epl-2.0/}{Eclipse Public License}.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.45\textwidth]{logo-eclipse}
+    \caption{Logo Eclipse}
+    \label{fig:figure10}
+    \end{center}
+\end{figure}
+
+\subsection{Maven}
+Maven è uno strumento di gestione di progetti software, è basato su un Project Object Model (POM) e può gestire la build, il reporting e la documentazione di un progetto. Nel corso dello stage Maven è stato utilizzato principalmente per automatizzare la build del progetto, sia in sviluppo che in produzione.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.4\textwidth]{logo-maven}
+    \caption{Logo Maven}
+    \label{fig:figure11}
+    \end{center}
+\end{figure}
+
+\subsection{Git}
+Git è un sistema di controllo di versione distribuito, gratuito ed open source, progettato per gestire progetti di qualsiasi tipo. Nel corso dello stage l'utilizzo di Git è stato affiancato a quello di GitLab, una piattaforma web per la gestione di repository Git.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.24\textwidth]{logo-git}
+    \caption{Logo Git}
+    \label{fig:figure12}
+    \end{center}
+\end{figure}
+\subsection{SQL Developer}
+SQL Developer è un ambiente di sviluppo integrato per lavorare con SQL nei database Oracle. Nel corso dello stage è stato utilizzato per gestire e testare il database Oracle usato in produzione.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=0.23\textwidth]{logo-sqldeveloper}
+    \caption{Logo SQL Developer}
+    \label{fig:figure13}
+    \end{center}
+\end{figure}
+
+%**************************************************************
+\section{Organizzazione del testo}
+
+\begin{description}
+    \item[{\hyperref[cap:obbiettivi-pianificazione]{Il secondo capitolo}}] descrive gli obbietti dello stage, la pianificazione del lavoro effettuata a monte e le aspettative personali riguardanti lo stage;
+    
+    \item[{\hyperref[cap:metodologia-lavoro]{Il terzo capitolo}}] approfondisce la metodologia di lavoro adottata e i ruoli adottati dal team di sviluppo;
+
+\end{description}
+
+Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
+\begin{itemize}
+	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
+	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
+	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
+\end{itemize}
