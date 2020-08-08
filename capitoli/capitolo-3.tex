@@ -49,6 +49,13 @@ Il team di sviluppo:
     \item non possiede un team leader, in quanto in Scrum nel team di sviluppo sono considerati tutti di pari livello.
 \end{itemize}
 
+Nel corso dello stage i ruoli erano così suddivisi:
+\begin{itemize}
+    \item Scrum master: Bledar Gogaj
+    \item Team di sviluppo: Alessandro Discalzi, Tania Parolin
+    \item Product owner: Marco Lionello
+\end{itemize}
+
 \subsection{Artefatti}
 
 \subsubsection{Product backlog}
@@ -66,9 +73,27 @@ Un buon Product backlog è \textbf{DEEP}:
     \item \textbf{emergente}: il Product backlog viene aggiornato in base alla variabilità del progetto;
     \item \textbf{prioritizzato}: le voci sono ordinate per priorità, quelle con priorità più alta forniscono maggior valore al prodotto.
 \end{itemize}
+Nel corso del progetto di stage per gestire il Product Backlog è stato utilizzato \href{https://taiga.io/}{Taiga}, un tool per la gestione di progetti agile.
+\begin{figure}[h]
+    \begin{center}
+    \includegraphics[width=1.2\textwidth]{taiga}
+    \caption{Screenshot del backlog presente su Taiga rispetto uno degli sprint terminati}
+    \label{fig:figure13}
+    \end{center}
+\end{figure}
 
 \subsubsection{Definition of done}
 Durante ogni sprint ciò che viene fatto costituisce un prodotto potenzialmente rilasciabile, questo deve essere approvato dal Product owner, dallo Scrum master e dal Team di sviluppo prima dell'inizio dello sprint successivo. La definition of done è un insieme di regole che definiscono quando ciò che viene fatto può essere definito rilasciabile.
+La definition of done adottata durante lo stage è la seguente:
+\begin{itemize}
+    \item AMS (Advertising Management System) deve essere stato compilato senza warning;
+    \item il software deve essere stato deployato nell’ambiente locale senza l'introduzione di nuovi errori e/o warning;
+    \item devono essere stati eseguiti i test sulle nuove funzionalità;
+    \item il codice deve essere stato revisionato dallo Scrum Master/Product Owner;
+    \item la feature implementata deve essere accettata dal Product Owner.
+\end{itemize}
+Nei casi in cui questa definizione non fosse applicabile (ad esempio nel caso di modifiche che richiedono più voci/user stories/sprint) avrebbe dovuto essere evidenziata la violazione del Definition of Done allo Scrum Master ed al Product Owner ritardando la chiusura del Done a quando fosse stato effettivamente possibile.
+
 
 
 \subsection{Fasi}
@@ -76,6 +101,7 @@ Durante ogni sprint ciò che viene fatto costituisce un prodotto potenzialmente 
 \subsubsection{Sprint}
 Uno sprint è un periodo di tempo ben definito, di solito due settimane o un mese, durante il quale il team di sviluppo completa una parte di lavoro in base a quanto definito nel Product backlog.
 Gli sprint hanno durata fissa che non può essere estesa, tuttavia se lo sprint risulta fallimentare o obsoleto può essere cancellato prima del termine dal Product owner.
+\\Nel corso del progetto didattico la durata degli sprint è stata fissata a due settimane, la durata e gli argomenti discussi durante le riunioni descritte successivamente hanno seguito le regole di Scrum.
 
 \subsubsection{Sprint planning}
 Lo sprint planning è un incontro che viene effettuato prima di ogni sprint, la cui durata è limitata a due ore per ogni settimana di sprint. L'obbiettivo dello sprint planning è definire cosa rilasciare al termine del prossimo sprint e come farlo.
@@ -103,7 +129,3 @@ La sprint review si tiene alla fine di uno sprint, in modo da ispezzionare gli i
 
 \subsubsection{Sprint retrospective}
 La sprint retrospective ha luogo dopo la Sprint review e prima dello Sprint planning e la sua durata è limitata a 45 minuti per ogni settimana di sprint. Durante la retrospettiva, che viene vista come una possibilità di miglioramento per il team, si discute di cosa è andato bene, di cosa è andato storto e di come si può migliorare per il prossimo sprint. Questo favorisce il team in quanto si possono migliorare le metodologie adottate nello sprint precedente in base a ciò che è andato storto.
-
-
-%**************************************************************
-\section{Scrum applicato ad Advertising Management System}
