@@ -151,7 +151,7 @@ entity Content {
 \end{lstlisting}
 \subsubsection{Definizione di un'enumerazione in JDLStudio}
 Un'enumerazione viene definita in JDL specificandone il nome e i suoi possibili valori dati. Un esempio di definizione di un'entità è il seguente:
-\begin{lstlisting}[caption={Definizione enumerazione State},label={lst:ent}]
+\begin{lstlisting}[caption={Definizione enumerazione State},label={lst:en}]
 enum State {
   CREATED,
   TO_ASSOCIATE,
@@ -163,7 +163,7 @@ enum State {
 \end{lstlisting}
 \subsubsection{Definizione di una relazione in JDLStudio}
 Per definire una relazione in JDL bisogna innanzitutto specificare il tipo di relazione (uno a uno, uno a molti, molti a molti). Fatto questo è sufficiente specificare l'entità di partenza della relazione e quella di arrivo. Un esempio di definizione di relazioni in JDL è il seguente:
-\begin{lstlisting}[caption={Definizione relazioni uno a molti},label={lst:ent}]
+\begin{lstlisting}[caption={Definizione relazioni uno a molti},label={lst:rel}]
 relationship OneToMany {
   Content{page} to ContentPage{content},
   Template{page} to ContentPage{template},
@@ -184,14 +184,47 @@ Il modello ER autogenerato presenta imperfezioni nella visualizzazione delle rel
     \label{fig:figure19}
     \end{center}
 \end{figure}
-
+Una volta creato il modello del database tramite JDL Studio è possibile importarlo direttamente all'interno dell'applicativo.
+Tale procedura oltre a generare il database creerà anche una struttura di base dell'applicazione completa di back-end e front-end. Seppur questa non risulta utilizzabile evita la scrittura di numerose linee di codice al programmatore riducendo l'introduzione di errori umani.
 %**************************************************************
 \section{Definizione dei template per i contenuti}
 In quanto nella progettazione del database è stato scelto di modellare i template in modo che fossero più modulari ed estendibili possibile, è stata necessaria un accurata definizione degli stessi. Si è optato per definire un template di base utilizzato da ogni contenuto informativo, e una serie di template personalizzati utilizzati dalle pagine inserite in un contenuto.
 \subsection{Template di base}
 Il template di base definito contiene poche informazioni. Definisce infatti la struttura base della pagina html e la funzione per visualizzare le slide. Contiene inoltre vari placeholder utilizzati per inserire dinamicamente le informazioni di un determinato contenuto informativo.
 I placeholder definiti sono: 
+\begin{itemize}
+    \item \$\{CSS\}: Utilizzato per inserire il css dei template utilizzati;
+    \item \$\{CONTENTID\}: Utilizzato per inserire l’id del contenuto come id nel div più esterno;
+    \item \$\{PAGES\}: Utilizzato per inserire le pagine presenti in un contenuto;
+    \item \$\{SLIDETIME\}: Utilizzato per impostare lo slidetime scelto in un contenuto;
+\end{itemize}
+\subsection{Template di pagina}
+I template di pagina sono quelli scelti dall'utente durantela creazione di un contenuto.
+Anche in questo caso i template, scritti in html, avranno al loro interno opportuni placeholder per inserire i dati al momento dell'utilizzo. Poiché non si può sapere a priori come saranno definiti i template futuri sono state definite delle regole da seguire durante la creazione di un nuovo template. La lista delle regole definite è la seguente:
+\begin{itemize}
+    \item definire un nome del template univoco;
+    \item anteporre il nome del template ad ogni classe o id utilizzati per il CSS;
+    \item non definire css per gli elementi html, utilizzare solamente classi e id;
+    \item definire un tag \textit{<div>...</div>} differente per ogni item del template;
+    \item nel caso si volessero inserire video o immagini all'interno di un nuovo template seguire gli esempi forniti insieme alla documentazione;
+    \item definire i placeholder per l'inserimento di video, immagini o elementi testuali nel formato \textit{\$\{ItemTypeTemplateArea\}};
+\end{itemize}
 
 %**************************************************************
 \section{Definizione dei servizi di backend}
-
+Durante l'importazione del modello del database JHipster genera automaticamente alcuni servizi RESTful per ciascuna entità. Più nello specifico:
+\begin{itemize}
+    \item creazione di un record;
+    \item eliminazione di un record;
+    \item modifica di un record;
+    \item ricerca di un record per ID;
+    \item ricerca di tutti i record presenti;
+\end{itemize}
+I servizi autogenerati tuttavia non erano sufficienti, alcuni di essi hanno avuto la necessità di essere modificati mentre per altre funzionalità ne sono stati implementati di nuovi. I servizi con la necessità di essere adattati erano, in genere, quelli di modifica. Questi sono stati adattati in modo che gestissero le relazioni correttamente. Sono stati inoltre modificati i servizi di eliminazione, in modo che rispettassero i vincoli di integrità referenziale
+I serviti definiti ad hoc sono invece i seguenti:
+\begin{itemize}
+    \item servizio di update dello stato di un contenuto;
+    \item servizio di creazione della preview di un contenuto;
+    \item servizio di upload di un file multimediale;
+    \item servizio di ricerca di un file multimediale per ID e che ritorna il file in Base64;
+\end{itemize}
