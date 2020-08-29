@@ -14,7 +14,7 @@
 Nel corso di questa sezione vengono descritte tutte le funzionalità implementate al momento del termine dello stage.
 
 \subsection{Login}
-Il login del prodotto finale dovrà essere gestito tramite un sistema di \gls{ssog} esterno. Nonostante ciò l'implementazione di tale sistema non era tra gli obbiettivi di stage, per la demo finale è stato ritenuto sufficiente utilizzare un \gls{mockg} dello stesso. 
+Il \textit{login} del prodotto finale dovrà essere gestito tramite un sistema di \gls{ssog} esterno. Nonostante ciò l'implementazione di tale sistema non era tra gli obbiettivi di stage, per la demo finale è stato ritenuto sufficiente utilizzare un \gls{mockg} dello stesso. 
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=0.95\textwidth]{login}
@@ -36,7 +36,7 @@ Più nello specifico, le funzionalità raggiungibili tramite questa schermata so
 \begin{itemize}
     \item gestione dei contenuti;
     \item gestione delle campagne (Non abilitata);
-    \item visualizzazione audit.
+    \item visualizzazione \textit{audit}.
 \end{itemize}
 
 \subsection{Gestione contenuti}
@@ -70,8 +70,8 @@ Tramite questa pagina è inoltre possibile creare un nuovo contenuto.
 \end{figure}
 
 \subsection{Creazione di un contenuto}
-La schermate di creazione di un contenuto è divisa in due aree. In quella di sinistra si inseriscono le informazioni generali relative al contenuto. In quella di destra è possibile creare le pagine del contenuto, selezionando per ciascuna uno tra i vari template disponibili.
-Nel caso si scelgano template con contenuti multimediali è sufficiente che questi vengano caricati attraverso l'apposito pulsante. Nel caso ci siano contenuti testuali da inserire è possibile invece utilizzare l'apposito editor di testo.
+La schermate di creazione di un contenuto è divisa in due aree. In quella di sinistra si inseriscono le informazioni generali relative al contenuto. In quella di destra è possibile creare le pagine del contenuto, selezionando per ciascuna uno tra i vari \textit{template} disponibili.
+Nel caso si scelgano \textit{template} con contenuti multimediali è sufficiente che questi vengano caricati attraverso l'apposito pulsante. Nel caso ci siano contenuti testuali da inserire è possibile invece utilizzare l'apposito editor di testo.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{Creazione}
@@ -81,7 +81,7 @@ Nel caso si scelgano template con contenuti multimediali è sufficiente che ques
 \end{figure}
 
 \subsection{Anteprima di un contenuto}
-La possibilità di visualizzare l'anteprima di un contenuto una volta creato è una delle funzionalità più utili e importanti. L'anteprima ermette infatti di visualizzare come sarebbe un contenuto una volta pubblicato e permette di decidere se richiederne l'associazione o modificarlo.
+La possibilità di visualizzare l'anteprima di un contenuto una volta creato è una delle funzionalità più utili e importanti. L'anteprima permette infatti di visualizzare come si presenterebbe un contenuto una volta pubblicato e permette di decidere se richiederne l'associazione o modificarlo.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{anteprima}
@@ -131,7 +131,7 @@ Un contenuto potrebbe essere creato per errore o non più necessario, in questo 
 \end{figure}
 
 \subsection{Audit}
-La schermata di visualizzazione degli audit, raggiungibile dalla schermata principale, è visualizzabile da chiunque abbia effetuato il \textit{Login} e raccoglie varie informazioni sulle attività effettuate dagli utenti.
+La schermata di visualizzazione degli \textit{audit}, raggiungibile dalla schermata principale, è visualizzabile da chiunque abbia effetuato il \textit{Login} e raccoglie varie informazioni sulle attività effettuate dagli utenti.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{audit}
@@ -142,10 +142,10 @@ La schermata di visualizzazione degli audit, raggiungibile dalla schermata princ
 
 %**************************************************************
 \section{Documentazione}
-Oltre allo sviluppo dell'applicazione vera e propria una parte delle ore a disposizione è stata dedicata alla documentazione. In accordo con il Product Owner è stato deciso di redarre solamente il manuale utente e il manuale sviluppatore.
+Oltre allo sviluppo dell'applicazione vera e propria una parte delle ore a disposizione è stata dedicata alla documentazione. In accordo con il \textit{Product Owner} è stato deciso di redarre solamente il manuale utente e il manuale sviluppatore.
 
 \subsection{Manuale Utente}
-Lo scopo di questo documento è illustrare tutte le funzionalità del prodotto. In tal modo l'utente finale ha a disposizione tutte le informazione per utilizzare il software correttamente.
+Lo scopo di questo documento è illustrare tutte le funzionalità del prodotto. In tal modo l'utente finale ha a disposizione tutte le informazione per utilizzare il \textit{software} correttamente.
 Il manuale utente descrive:
 \begin{itemize}
     \item requisiti di sistema;
@@ -158,22 +158,22 @@ Il manuale sviluppatore tuttavia non ha lo scopo di sostituirsi alla documentazi
 Il manuale sviluppatore descrive:
 \begin{itemize}
     \item setup dell'ambiente di lavoro;
-    \item gestione delle dipendenze Angular;
-    \item gestione della dipendenza ad Oracle;
-    \item utilizzo di Angular CLI;
-    \item build e packaging dell'applicazione;
-    \item testing;
-    \item utilizzo di Docker;
-    \item continuos integration;
+    \item gestione delle dipendenze \textit{Angular};
+    \item gestione della dipendenza ad \textit{Oracle};
+    \item utilizzo di \textit{Angular CLI};
+    \item \textit{build} e \textit{packaging} dell'applicazione;
+    \item \textit{testing};
+    \item utilizzo di \textit{Docker};
+    \item \gls{ci};
     \item scelte implementative effettuate.
 \end{itemize}
 
 %**************************************************************
 \section{Test}
-Nello sviluppo di un'applicazione il testing è una delle fasi più importanti. Poiché ogni due settimane veniva presentata una demo dell'applicativo i test sono stati eseguiti di continuo durante lo sviluppo, sia in modo automatiche che non. Nel corso di questa sezione vengono descritti i test svolti durante lo sviluppo.
+Nello sviluppo di un'applicazione il \textit{testing} è una delle fasi più importanti. Poiché ogni due settimane veniva presentata una demo dell'applicativo i \textit{test} sono stati eseguiti di continuo durante lo sviluppo, sia in modo automatico che non. Nel corso di questa sezione vengono descritti i \textit{test} svolti durante lo sviluppo.
 
 \subsection{Test di unità}
-I test di unità sono eseguiti per verificare se sono presenti errori nei singoli metodi. Nel corso dello stage i test di unità sono stati eseguiti tramite JUnit e Jest. Tali framework sono sviluppati rispettivamente per Java e per Javascript. Il primo è stato utilizzato per testare il back-end mentre il secondo per il front end.
+I \textit{test} di unità sono eseguiti per verificare se sono presenti errori nei singoli metodi. Nel corso dello stage i \textit{test} di unità sono stati eseguiti tramite \textit{JUnit} e \textit{Jest}. Tali \textit{framework} sono sviluppati rispettivamente per \textit{Java} e per \textit{Javascript}. Il primo è stato utilizzato per testare il \textit{back-end} mentre il secondo per il \textit{front-end}.
 
 \begin{lstlisting}[caption={Test di unità in Java},label={utj}]
     @Test
@@ -249,13 +249,13 @@ I test di unità sono eseguiti per verificare se sono presenti errori nei singol
 \end{lstlisting}
 
 \subsection{Test di integrazione}
-I test di integrazione vengono eseguiti per verificare che non ci siano errori di integrazione tra le varie componenti del sistema. Nel corso del progetto questa fase di test è stata ritenuta di grande importanza, in particolare nell'integrazione tra il back-end e il front-end. In questo caso i suddetti test sono stati eseguiti manualmente. 
+I \textit{test} di integrazione vengono eseguiti per verificare che non ci siano errori di integrazione tra le varie componenti del sistema. Nel corso del progetto questa fase di \textit{test} è stata ritenuta di grande importanza, in particolare nell'integrazione tra il \textit{back-end} e il \textit{front-end}. In questo caso i suddetti \textit{test} sono stati eseguiti manualmente. 
 
 \subsection{Test di sistema}
-I test di sistema vengono eseguiti per assicurare che il sistema soddisfi i requisiti richiesti. Nel corso dello stage dopo l'implementazione di una nuova funzionalità l'intero sistema veniva testato. Al termine di ogni sprint tali test venivano eseguiti dal product owner, in tal caso questi possono essere considerati test di accettazione.
+I \textit{test} di sistema vengono eseguiti per assicurare che il sistema soddisfi i requisiti richiesti. Nel corso dello stage dopo l'implementazione di una nuova funzionalità l'intero sistema veniva testato. Al termine di ogni sprint tali \textit{test} venivano eseguiti dal \textit{product owner}, in tal caso questi possono essere considerati \textit{test} di accettazione.
 
 \subsection{Test di performance}
-I test di performance vengono eseguiti per controllare che il sistema non risulti lento durante il suo utilizzo. Tali test sono stati eseguiti con l'ausilio del pannello amministratore generato da JHipster. Questo permette di visualizzare una moltitudine di informazioni come ad esempio le risorse occupate o il tempo di esecuzione delle API.
+I \textit{test} di performance vengono eseguiti per controllare che il sistema non risulti lento durante il suo utilizzo. Tali \textit{test} sono stati eseguiti con l'ausilio del pannello amministratore generato da \textit{JHipster}. Questo permette di visualizzare una moltitudine di informazioni come ad esempio le risorse occupate o il tempo di esecuzione delle \gls{apig}.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{metriche1}
@@ -265,4 +265,4 @@ I test di performance vengono eseguiti per controllare che il sistema non risult
 \end{figure}
 
 \section{Accessibilità}
-I test di accessibilità sono necessari per verificare che l'applicativo risulti utilizzabile anche da utenti con disabilità. Nel corso del progetto si è cercato di attenersi alle regole definite nello standard \href{https://www.w3.org/TR/WCAG21/}{WCAG 2.1}. I test veri e propri sono stati poi eseguiti tramite \href{https://developers.google.com/web/tools/lighthouse/?utm_source=devtools}{\textit{Lighthouse}}, un tool per l'analisi dinamica di pagine web.
+I \textit{test} di accessibilità sono necessari per verificare che l'applicativo risulti utilizzabile anche da utenti con disabilità. Nel corso del progetto si è cercato di attenersi alle regole definite nello standard \href{https://www.w3.org/TR/WCAG21/}{WCAG 2.1}. I test veri e propri sono stati poi eseguiti tramite \href{https://developers.google.com/web/tools/lighthouse/?utm_source=devtools}{\textit{Lighthouse}}, un tool per l'analisi dinamica di pagine web.
