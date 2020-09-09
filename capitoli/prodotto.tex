@@ -14,7 +14,7 @@
 Nel corso di questa sezione vengono descritte tutte le funzionalità implementate al momento del termine dello stage.
 
 \subsection{Login}
-Il \textit{login} del prodotto finale dovrà essere gestito tramite un sistema di \gls{ssog} esterno. Nonostante ciò l'implementazione di tale sistema non era tra gli obiettivi di stage, per la demo finale è stato ritenuto sufficiente utilizzare un \gls{mockg} dello stesso. 
+Il \textit{login} del prodotto finale dovrà essere gestito tramite un sistema di \gls{ssog} esterno. Nonostante ciò l'implementazione di tale sistema non era tra gli obiettivi dello stage, per la demo finale è stato ritenuto sufficiente utilizzare un \gls{mockg} dello stesso. 
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=0.95\textwidth]{login}
@@ -32,7 +32,7 @@ La schermata principale del prodotto è la schermata di scelta funzionalità. Tr
     \label{fig:figure21}
     \end{center}
 \end{figure}
-Più nello specifico, le funzionalità raggiungibili tramite questa schermata sono:
+\\Più nello specifico le funzionalità raggiungibili tramite questa schermata sono:
 \begin{itemize}
     \item gestione dei contenuti;
     \item gestione delle campagne (Non abilitata);
@@ -60,7 +60,7 @@ Questa sezione è quella in cui sono utilizzabili la maggior parte delle funzion
     \item eliminarlo.
 \end{itemize}
 Nel caso sia stata richiesta l'associazione di un contenuto, questo non potra più essere eliminato né modificato.
-Tramite questa pagina è inoltre possibile creare un nuovo contenuto.
+Tramite questa pagina è inoltre possibile crearne uno nuovo.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{editore}
@@ -91,7 +91,7 @@ La possibilità di visualizzare l'anteprima di un contenuto una volta creato è 
 \end{figure}
 
 \subsection{Clonazione di un contenuto}
-La possibilità di clonare un contenuto è utile nel caso si voglia creare un contenuto simile ad uno già pubblicato senza la necessità di dover partire da zero. Per clonare un contenuto è sufficiente cliccare su \textit{"Clona"} nella sezione dedicata al ruolo di editore. Fatto ciò si aprirà automaticamente un pannello modale in cui è necessario inserire il nome che si vuole assegnare al nuovo contenuto.
+La possibilità di clonare un contenuto è utile nel caso si voglia crearne uno simile ad uno già pubblicato senza la necessità di dover partire da zero. Per clonare un contenuto è sufficiente cliccare su \textit{"Clona"} nella sezione dedicata al ruolo di editore. Fatto ciò si aprirà automaticamente un pannello modale in cui è necessario inserire il nome che si vuole assegnare al nuovo contenuto.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{clona}
@@ -101,7 +101,7 @@ La possibilità di clonare un contenuto è utile nel caso si voglia creare un co
 \end{figure}
 
 \subsection{Modifica di un contenuto}
-Modificare un contenuto può essere indispensabile nel caso, ad esempio, siano state inserite immagini o testi errati. La schermata di modifica di un contenuto si presenta in modo analogo a quella di creazione con la differenza che i campi dati hanno già le informazioni del contenuto al loro interno.
+Modificare un contenuto può essere indispensabile nel caso, ad esempio, siano state inserite immagini o testi errati. La schermata di modifica di un contenuto si presenta in modo analogo a quella di creazione, con la differenza che i campi dati hanno già le informazioni del contenuto al loro interno.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{modifica}
@@ -111,7 +111,7 @@ Modificare un contenuto può essere indispensabile nel caso, ad esempio, siano s
 \end{figure}
 \newpage
 \subsection{Associazione di un contenuto}
-La richiesta di associazione di un contenuto è il primo passo da eseguire perchè questo possa essere pubblicato. Una volta richiesta l'associazione di un contenuto questo non potrà più essere modificato ne eliminato. L'associazione può essere approvata o rifiutata da un redattore; nel primo caso il contenuto potrà proseguire nel suo ciclo di vita, nel secondo tornerà allo stato iniziale e sarà di nuovo modificabile.
+La richiesta di associazione di un contenuto è il primo passo da eseguire perchè questo possa essere pubblicato. Una volta inoltrata la richiesta di associazione di un contenuto questo non potrà più essere modificato ne eliminato. L'associazione può essere approvata o rifiutata da un redattore; nel primo caso il contenuto potrà proseguire nel suo ciclo di vita, nel secondo tornerà allo stato iniziale e sarà di nuovo modificabile.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{associazione}
@@ -121,7 +121,7 @@ La richiesta di associazione di un contenuto è il primo passo da eseguire perch
 \end{figure}
 
 \subsection{Eliminazione di un contenuto}
-Un contenuto potrebbe essere creato per errore o non più necessario, in questo caso può tornare utile l'eliminazione. L'eliminazione è irreversibile.
+Un contenuto potrebbe essere creato per errore oppure non essere più necessario. In questo caso può tornare utile l'eliminazione. L'eliminazione è irreversibile.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{eliminazione}
@@ -142,10 +142,10 @@ La schermata di visualizzazione degli \textit{audit}, raggiungibile dalla scherm
 
 %**************************************************************
 \section{Documentazione}
-Oltre allo sviluppo dell'applicazione vera e propria una parte delle ore a disposizione è stata dedicata alla documentazione. In accordo con il \textit{Product Owner} è stato deciso di redarre solamente il manuale utente e il manuale sviluppatore.
+Oltre allo sviluppo dell'applicazione vera e propria, una parte delle ore a disposizione è stata dedicata alla documentazione. In accordo con il \textit{Product Owner} è stato deciso di redigere solamente il manuale utente e il manuale sviluppatore.
 
 \subsection{Manuale Utente}
-Lo scopo di questo documento è illustrare tutte le funzionalità del prodotto. In tal modo l'utente finale ha a disposizione tutte le informazione per utilizzare il \textit{software} correttamente.
+Lo scopo di questo documento è illustrare tutte le funzionalità del prodotto. In tal modo l'utente finale ha a disposizione tutte le informazioni per utilizzare il \textit{software} correttamente.
 Il manuale utente descrive:
 \begin{itemize}
     \item requisiti di sistema;
@@ -170,7 +170,7 @@ Il manuale sviluppatore descrive:
 
 %**************************************************************
 \section{Test}
-Nello sviluppo di un'applicazione il \textit{testing} è una delle fasi più importanti. Poiché ogni due settimane veniva presentata una demo dell'applicativo i \textit{test} sono stati eseguiti di continuo durante lo sviluppo, sia in modo automatico che non. Nel corso di questa sezione vengono descritti i \textit{test} svolti durante lo sviluppo.
+Nello sviluppo di un'applicazione il \textit{testing} è una delle fasi più importanti. Poiché ogni due settimane veniva presentata una demo dell'applicativo, i \textit{test} sono stati eseguiti di continuo durante lo sviluppo, sia in modo automatico sia manualmente. \\Nel corso di questa sezione vengono descritti i \textit{test} svolti durante lo sviluppo.
 
 \subsection{Test di unità}
 I \textit{test} di unità sono eseguiti per verificare se sono presenti errori nei singoli metodi. Nel corso dello stage i \textit{test} di unità sono stati eseguiti tramite \textit{JUnit} e \textit{Jest}. Tali \textit{framework} sono sviluppati rispettivamente per \textit{Java} e per \textit{Javascript}. Il primo è stato utilizzato per testare il \textit{back-end} mentre il secondo per il \textit{front-end}.
@@ -252,10 +252,10 @@ I \textit{test} di unità sono eseguiti per verificare se sono presenti errori n
 I \textit{test} di integrazione vengono eseguiti per verificare che non ci siano errori di integrazione tra le varie componenti del sistema. Nel corso del progetto questa fase di \textit{test} è stata ritenuta di grande importanza, in particolare nell'integrazione tra il \textit{back-end} e il \textit{front-end}. In questo caso i suddetti \textit{test} sono stati eseguiti manualmente. 
 
 \subsection{Test di sistema}
-I \textit{test} di sistema vengono eseguiti per assicurare che il sistema soddisfi i requisiti richiesti. Nel corso dello stage dopo l'implementazione di una nuova funzionalità l'intero sistema veniva testato. Al termine di ogni sprint tali \textit{test} venivano eseguiti dal \textit{product owner}, in tal caso questi possono essere considerati \textit{test} di accettazione.
+I \textit{test} di sistema vengono eseguiti per assicurare che il sistema soddisfi i requisiti richiesti. \\Nel corso dello stage dopo l'implementazione di una nuova funzionalità l'intero sistema veniva testato. Al termine di ogni sprint tali \textit{test} venivano eseguiti dal \textit{product owner}, in tal caso questi possono essere considerati \textit{test} di accettazione.
 
 \subsection{Test di performance}
-I \textit{test} di performance vengono eseguiti per controllare che il sistema non risulti lento durante il suo utilizzo. Tali \textit{test} sono stati eseguiti con l'ausilio del pannello amministratore generato da \textit{JHipster}. Questo permette di visualizzare una moltitudine di informazioni come ad esempio le risorse occupate o il tempo di esecuzione delle \gls{apig}.
+I \textit{test} di performance vengono eseguiti per controllare che il sistema non risulti lento durante il suo utilizzo. Tali \textit{test} sono stati eseguiti con l'ausilio del pannello amministratore generato da \textit{JHipster}. Questo permette di visualizzare una moltitudine di informazioni, come ad esempio le risorse occupate o il tempo di esecuzione delle \gls{apig}.
 \begin{figure}[h]
     \begin{center}
     \includegraphics[width=1\textwidth]{metriche1}
